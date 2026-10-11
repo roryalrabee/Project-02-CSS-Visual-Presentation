@@ -1,16 +1,19 @@
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    animation: move 2s infinite alternate;
+.card {
+    width: 250px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
 }
 
-@keyframes move {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(200px);
-    }
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
 }
+
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-8px) scale(1.05);
+} 

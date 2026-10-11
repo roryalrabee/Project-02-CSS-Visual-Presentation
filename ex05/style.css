@@ -1,11 +1,20 @@
-.my-button {
-    background-color: blue;
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    transition: background-color 0.5s;
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid lightgray;
+    border-top: 8px solid blue;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
-.my-button:hover {
-    background-color: green;
-}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} 
